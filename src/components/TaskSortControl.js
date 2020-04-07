@@ -47,7 +47,7 @@ class TaskSortControl extends Component {
                                 role="button"
                                 className={(this.props.sortBy === 'status' && this.props.sortValue === 1) ? 'sort_selected' : ''}
                             >
-                                Trạng Thái Kích Hoạt
+                                Chưa hoàn thành
                             </a>
                         </li>
                         <li onClick={ () => this.onClick('status', -1) }>
@@ -55,7 +55,7 @@ class TaskSortControl extends Component {
                                 role="button"
                                 className={(this.props.sortBy === 'status' && this.props.sortValue === -1) ? 'sort_selected' : ''}
                             >
-                                Trạng Thái Ẩn
+                                Đã hoàn thành 
                             </a>
                         </li>
                     </ul>

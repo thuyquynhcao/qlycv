@@ -67,8 +67,8 @@ class TaskList extends Component {
                                         value={ this.state.filerName }
                                     >
                                         <option value={-1}>Tất Cả</option>
-                                        <option value={0}>Ẩn</option>
-                                        <option value={1}>Kích Hoạt</option>
+                                        <option value={0}>Chưa hoàn thành </option>
+                                        <option value={1}>Đã hoàn thành </option>
                                     </select>
                                 </td>
                                 <td></td>

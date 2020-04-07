@@ -90,8 +90,8 @@ class TaskForm extends Component {
                             onChange={this.onHandleChange}
                             name="status"
                         >
-                            <option value={true}>Kích Hoạt</option>
-                            <option value={false}>Ẩn</option>
+                            <option value={true}>Chưa hoàn thành</option>
+                            <option value={false}>Đã hoàn thành</option>
                         </select><br/>
                         <div className="text-center">
                             <button type="submit" className="btn btn-warning">

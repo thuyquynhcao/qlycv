@@ -23,12 +23,13 @@ class TaskList extends Component {
 
     render() {
         var { tasks } = this.props;
-        var elmTasks = tasks.map((task, index) => {
-            return (
+        var elmTasks = tasks.map((task, index) => {//hàm copy,vòng lặp, lấy từng phần tử 
+        
+            return (//hiển thị 
                 <TaskItem
                     key={task.id}
-                    task={task}
-                    index={index + 1}
+                    task={task}//giá trị của task 
+                    index={index + 1}// số thứ tự 
                     onUpdateStatus={ this.props.onUpdateStatus }
                     onDeleteTask={ this.props.onDeleteTask }
                     onSelectedItem = { this.props.onSelectedItem }
@@ -67,8 +68,8 @@ class TaskList extends Component {
                                         value={ this.state.filerName }
                                     >
                                         <option value={-1}>Tất Cả</option>
-                                        <option value={0}>Chưa hoàn thành </option>
-                                        <option value={1}>Đã hoàn thành </option>
+                                        <option value={0}>Đã hoàn thành </option>
+                                        <option value={1}>Chưa hoàn thành </option>
                                     </select>
                                 </td>
                                 <td></td>

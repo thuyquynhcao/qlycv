@@ -11,7 +11,7 @@ class TaskList extends Component {
         };
     }
 
-    onChange = (event) => {
+     onChange = (event) => {
         var target = event.target;
         var name = target.name;
         var value = target.type === 'checkbox' ? target.checked : target.value;
@@ -19,7 +19,7 @@ class TaskList extends Component {
         this.setState({
             [name] : value
         });
-    }
+    } 
 
     render() {
         var { tasks } = this.props;
